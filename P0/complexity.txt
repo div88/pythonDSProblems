@@ -1,0 +1,46 @@
+Time Complexity Analysis
+
+Task 0
+I’m doing a lookup in the list by index which is constant time. So here the complexity is O(1)
+
+Task 1
+Approach is I get all phone numbers in a list and then create a set out of it
+getting all phone numbers in one list = o(n)
+doing it 2 times for texts = O(n + n) = O(2n)
+adding both into another list = O(2n)
+creating a set out of it. Adding to a set worst case is o(n) so for every item in the list it will be O(2n2)
+
+For calls = O(n) + O(2n) + O(2n) + O(2n2)
+removing constants = O(n) + O(n2)
+since O(n2) is higher than O(n) , the time complexity is O(n2)
+
+Doing this for calls too, so O(n2) + O(n2) = O(2n2) = O(n2)
+
+Time complexity is O(n2)
+
+Task 2
+I get the max of all time spent on the phone.
+max needs to check every element so its O(n)
+Accessing the elements inside list is constant
+
+Time complexity is O(n)
+
+Task3
+# O(5n)
+PARTA
+getting all numbers with Bangalore area code - O(n)
+getting only first columns - O(n)
+getting only area codes and adding it to set to keep unique numbers - o(n) + o(n) - O(2n)
+for loop - O(n)
+
+# O(2n)
+PARTB
+getting all numbers with Bangalore to Bamgalore area code  and fixed Line- O(n) + o(n)
+
+
+Task4
+# constant - O(4n)
+getting all phone numbers in one list = O(n)
+Separating the numbers with prefix, worst case if all are numbers are telemarketers = = O(n)
+I am creating a set to get the unique numbers and then sorting: o(n) worstCase
+Looping throught the list to print one number per line - O(n)
